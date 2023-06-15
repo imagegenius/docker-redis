@@ -1,0 +1,25 @@
+---
+
+# jenkins variables
+project_name: docker-redis
+external_type: alpine_repo
+release_type: stable
+release_tag: latest
+ig_branch: main
+repo_vars:
+  - BUILD_VERSION_ARG = 'REDIS_VERSION'
+  - IG_USER = 'imagegenius'
+  - IG_REPO = 'docker-redis'
+  - CONTAINER_NAME = 'redis'
+  - DIST_IMAGE = 'alpine'
+  - DIST_TAG = '3.18'
+  - DIST_REPO = 'http://dl-cdn.alpinelinux.org/alpine/v3.18/main/'
+  - DIST_REPO_PACKAGES = 'redis'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'false'
+  - CI_PORT = ''
+  - CI_SSL = 'false'
+  - CI_DOCKERENV = ''
+  - CI_AUTH = ''
+  - CI_WEBPATH = ''

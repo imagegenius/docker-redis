@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+
+# make redis folders
+mkdir -p \
+    /config/log/redis \
+    /var/run/redis/
+
+# copy redis defaults
+[[ ! -f /config/redis.conf ]] &&
+    cp /defaults/redis.conf /config/redis.conf
+
+# permissions
+chown -R abc:abc \
+    /config/ \
+    /var/run/redis/
