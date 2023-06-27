@@ -2,7 +2,6 @@
 
 # make redis folders
 mkdir -p \
-    /config/log/redis \
     /var/run/redis/
 
 # copy redis defaults
